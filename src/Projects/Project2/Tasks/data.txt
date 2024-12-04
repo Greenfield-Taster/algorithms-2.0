@@ -1,0 +1,7 @@
+example1@mail.com,Company A
+example2@mail.com,Company B
+example3@mail.com,Company C
+example4@mail.com,Company D
+example5@mail.com,Company E
+example6@mail.com,Company F
+example7@mail.com,Company G
