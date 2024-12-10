@@ -1,0 +1,18 @@
+{
+  "cities": [
+    { "id": 1, "name": "Запоріжжя" },
+    { "id": 2, "name": "Львів" },
+    { "id": 3, "name": "Київ" },
+    { "id": 4, "name": "Одеса" },
+    { "id": 5, "name": "Харків" },
+    { "id": 6, "name": "Дніпро" }
+  ],
+  "connections": [
+    { "from": 1, "to": 3, "distance": 550, "oneWay": false },
+    { "from": 3, "to": 2, "distance": 540, "oneWay": false },
+    { "from": 1, "to": 4, "distance": 300, "oneWay": false },
+    { "from": 4, "to": 5, "distance": 220, "oneWay": false },
+    { "from": 5, "to": 6, "distance": 150, "oneWay": false },
+    { "from": 6, "to": 2, "distance": 650, "oneWay": false }
+  ]
+}
