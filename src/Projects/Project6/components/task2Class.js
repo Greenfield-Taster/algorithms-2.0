@@ -1,7 +1,7 @@
 function dijkstra(graph, startId, endId) {
   const distances = {};
   const prev = {};
-  let cities = Object.keys(graph); // Замінили const на let
+  let cities = Object.keys(graph);  
   const visited = new Set();
 
   cities.forEach((city) => {
@@ -18,7 +18,7 @@ function dijkstra(graph, startId, endId) {
 
     if (city === endId) break;
 
-    cities = cities.filter((c) => c !== city); // Модифікуємо cities
+    cities = cities.filter((c) => c !== city);  
     visited.add(city);
 
     graph[city].forEach((neighbor) => {
@@ -49,8 +49,7 @@ function buildGraph(connections) {
   connections.forEach(({ from, to, distance, oneWay }) => {
     if (!graph[from]) graph[from] = [];
     graph[from].push({ to, distance });
-
-    // Якщо дорога двостороння, додаємо і у зворотному напрямку
+ 
     if (!oneWay) {
       if (!graph[to]) graph[to] = [];
       graph[to].push({ to: from, distance });
